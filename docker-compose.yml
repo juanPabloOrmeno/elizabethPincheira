@@ -1,14 +1,14 @@
 version: '3'
 
 services:
-  loscantores:
-    image: jormeno2020/elizabethpincheira:0.0.1
-    container_name: "elizabethpincheira"
+  electroautonomia:
+    image: jormeno2020/electroautonomia:0.0.1
+    container_name: "electroautonomia"
     restart: always
     networks:
       - traefik-local
     labels:
-      - "traefik.http.routers.elizabethpincheira.rule=Host(`elizabethpincheira.cl`)"
+      - "traefik.http.routers.electroautonomia.rule=Host(`electroautonomia.cl`)"
 
 networks:
   traefik-local:
