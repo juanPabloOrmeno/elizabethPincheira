@@ -1,34 +1,61 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pronto</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            height: 100vh;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f4f4f4;
-        }
-
-        .container {
-            text-align: center;
-        }
-
-        img {
-            max-width: 300px; /* Puedes ajustar este valor según lo necesites */
-            margin-top: 20px;
-        }
-    </style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ElizabethPincheira</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
 </head>
 <body>
-    <div class="container">
-        <h1>Pronto</h1>
-        <img src="./images/logo.png" alt="Imagen descriptiva">
-    </div>
+	<div class="container">
+		<div class="navbar">
+			<img src="images/logo.png" class="logo">
+			<nav>
+				<ul id="menulist">
+					<li><a href="">Home</a></li>
+					<li><a href="portafolio.html">Portafolio</a></li>
+					
+				</ul>
+			</nav>
+			<img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+		</div>
+		<div class="row">
+			<div class="col-1">
+				<h2>¡Hola!</h2>
+				<br>
+				<h3>Mi nombre es Elizabeth Pincheira</h3>
+				<p>Soy una diseñadora enfocada en la experiencia del usuario y como obtener un producto de alta calidad a través de la metodología ágil y el buen trabajo en equipo.</p>
+				<br>
+				<br>
+				
+					<a class="descarga"
+					href="Elizabeth-Pincheira.pdf" download="Elizabeth-Pincheira.pdf">Descargar curriculum</a>
+
+				
+			</div>
+			<div class="col-2">
+				<img src="images/eli3.png" class="eli">
+				<div class="color-box"></div>
+			</div>
+		</div>
+	</div>
+	<div class="social-links">
+		<a href="https://www.linkedin.com/in/elizabeth-evelyn-pincheira-caro-b75872a5"><img src="images/in.png"></a>
+	</div>
+		<script>
+			var menulist = document.getElementById("menulist");
+			menulist.style.maxHeight = "0px";
+			function togglemenu(){
+				if(menulist.style.maxHeight == "0px")
+					{
+						menulist.style.maxHeight ="130px";
+					}
+				else
+					{
+						menulist.style.maxHeight ="0px";
+					}
+			}
+		</script>
 </body>
 </html>

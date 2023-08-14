@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ElizabethPincheira_Portafolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<img src="images/logo.png" class="logo">
+			<nav>
+				<ul id="menulist">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="portafolio.html">Portafolio</a></li>
+					
+				</ul>
+			</nav>
+			<img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+		</div>
+		<div class="row">
+			<div class="col-1">
+				<a class="descarga"
+					href="http://jardineseab.cl/" download="Elizabeth-Pincheira.pdf">Ir al sitio web</a>
+				<br>
+				<br>
+
+				<div class="col-3">
+					<img src="images/web_1.png" class="eli">
+				</div>
+			</div>
+		</div>
+		<div class="social-links">
+			<a href="https://www.linkedin.com/in/elizabeth-evelyn-pincheira-caro-b75872a5"><img src="images/in.png"></a>
+		</div>
+			<script>
+				var menulist = document.getElementById("menulist");
+				menulist.style.maxHeight = "0px";
+				function togglemenu(){
+					if(menulist.style.maxHeight == "0px")
+						{
+							menulist.style.maxHeight ="130px";
+						}
+					else
+						{
+							menulist.style.maxHeight ="0px";
+						}
+				}
+			</script>
+	</body>
+	</html>
